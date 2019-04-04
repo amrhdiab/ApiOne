@@ -32,6 +32,7 @@ Built on laravel 5.8
 ```php
 php artisan passport:install
 ```
+- You will need to add (NEXMO_KEY) & (NEXMO_SECRET) values to your .env file.
 
 ## About me
 Junior PHP/Laravel web developer with unique vision and exceptional dedication.
