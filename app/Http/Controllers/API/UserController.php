@@ -66,7 +66,7 @@ class UserController extends Controller
         if ($user)
         {
             //Sending SMS via Nexmo
-            $basic = new \Nexmo\Client\Credentials\Basic('0aa32b60', '8SO52s8TMUX31NCa');
+            $basic = new \Nexmo\Client\Credentials\Basic(env('NEXMO_KEY'), env('NEXMO_SECRET'));
             $client = new \Nexmo\Client($basic);
 
             $message = $client->message()->send([
